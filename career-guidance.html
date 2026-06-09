@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Guidance — StudyMate AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">
+    <div class="brand-icon">🧬</div>
+    StudyMate <span>AI</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="learning-dna.html">Learning DNA</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="career-guidance.html" class="active">Career Guidance</a></li>
+    <li><a href="learning-dna.html" class="nav-cta">Get Started Free</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="learning-dna.html">Learning DNA</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="career-guidance.html">Career Guidance</a>
+  <a href="learning-dna.html" class="mobile-cta">Get Started Free</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero career-page">
+  <div class="section-tag" style="justify-content:center; color:var(--cyan-400);">DNA-Matched Careers</div>
+  <h1>Your Career Map</h1>
+  <p>Your Learning DNA has been cross-referenced against 200+ career paths. Here's where your mind is built to thrive.</p>
+</div>
+
+<!-- CAREER CONTENT -->
+<div class="career-content" style="max-width: 1100px; margin: 0 auto;">
+
+  <!-- Summary Stats -->
+  <div class="career-summary">
+    <div class="career-stat-card">
+      <div class="big">6</div>
+      <div class="lbl">Top Career Matches</div>
+    </div>
+    <div class="career-stat-card">
+      <div class="big">92%</div>
+      <div class="lbl">Best Match Score</div>
+    </div>
+    <div class="career-stat-card">
+      <div class="big">200+</div>
+      <div class="lbl">Paths Analysed</div>
+    </div>
+    <div class="career-stat-card">
+      <div class="big">DNA</div>
+      <div class="lbl">Profile Type: Visual-Analytical</div>
+    </div>
+  </div>
+
+  <!-- Main Career Grid + Radar Chart -->
+  <div class="career-main-grid" style="margin-bottom: 1.5rem;">
+
+    <!-- Top Career Cards -->
+    <div>
+      <h3 style="font-size: 1rem; color: var(--blue-900); margin-bottom: 1.2rem;">🎯 Top Career Matches for Your DNA</h3>
+      <div class="career-cards-grid">
+
+        <div class="career-card">
+          <div class="career-card-header">
+            <div class="career-icon fi-green">🏥</div>
+            <div class="match-ring">
+              <div class="match-num" style="color:var(--green-500);">92%</div>
+              <div class="match-lbl">DNA Match</div>
+            </div>
+          </div>
+          <h3>Medical Doctor</h3>
+          <p>Your Biology mastery (92%), visual-analytical profile, and high retention index make you a natural fit for Medicine. Diagnostics is a visual problem-solving discipline.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Biology A</span>
+            <span class="skill-tag">Chemistry A</span>
+            <span class="skill-tag">Critical Thinking</span>
+            <span class="skill-tag">Visual Analysis</span>
+          </div>
+          <div style="border-top:1px solid var(--gray-100); padding-top:.8rem; margin-top:.5rem;">
+            <div class="pathway">🎓 JAMB → Medicine & Surgery (MBBS)</div>
+            <div class="pathway" style="margin-top:.4rem;">📍 UNILAG · ABU · UNIBADAN · UNN</div>
+          </div>
+          <div style="display:flex; align-items:center; gap:.6rem; margin-top:.8rem;">
+            <span class="badge badge-green">Top Match</span>
+            <span class="badge badge-cyan">6-Year Programme</span>
+          </div>
+        </div>
+
+        <div class="career-card">
+          <div class="career-card-header">
+            <div class="career-icon fi-blue">🔬</div>
+            <div class="match-ring">
+              <div class="match-num">88%</div>
+              <div class="match-lbl">DNA Match</div>
+            </div>
+          </div>
+          <h3>Biomedical Scientist</h3>
+          <p>Your curiosity for how living systems work at the molecular level, combined with strong Chemistry scores, aligns powerfully with biomedical research and diagnostics.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Biology A</span>
+            <span class="skill-tag">Chemistry B</span>
+            <span class="skill-tag">Research Skills</span>
+            <span class="skill-tag">Lab Work</span>
+          </div>
+          <div style="border-top:1px solid var(--gray-100); padding-top:.8rem; margin-top:.5rem;">
+            <div class="pathway">🎓 JAMB → Biomedical Science (B.Sc)</div>
+            <div class="pathway" style="margin-top:.4rem;">📍 UNILAG · OAU · UNIBEN</div>
+          </div>
+          <div style="display:flex; align-items:center; gap:.6rem; margin-top:.8rem;">
+            <span class="badge badge-blue">Strong Match</span>
+            <span class="badge badge-blue">4-Year Programme</span>
+          </div>
+        </div>
+
+        <div class="career-card">
+          <div class="career-card-header">
+            <div class="career-icon fi-purple">💊</div>
+            <div class="match-ring">
+              <div class="match-num" style="color:var(--purple-500);">85%</div>
+              <div class="match-lbl">DNA Match</div>
+            </div>
+          </div>
+          <h3>Pharmacist</h3>
+          <p>Your Chemistry aptitude and pattern-recognition ability (identified in your DNA) are the two strongest predictors of success in pharmaceutical sciences.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Chemistry A</span>
+            <span class="skill-tag">Biology B</span>
+            <span class="skill-tag">Pattern Recognition</span>
+            <span class="skill-tag">Attention to Detail</span>
+          </div>
+          <div style="border-top:1px solid var(--gray-100); padding-top:.8rem; margin-top:.5rem;">
+            <div class="pathway">🎓 JAMB → Pharmacy (B.Pharm)</div>
+            <div class="pathway" style="margin-top:.4rem;">📍 UNILAG · UNIBEN · ABU</div>
+          </div>
+          <div style="display:flex; align-items:center; gap:.6rem; margin-top:.8rem;">
+            <span class="badge badge-purple">Strong Match</span>
+            <span class="badge badge-purple">5-Year Programme</span>
+          </div>
+        </div>
+
+        <div class="career-card">
+          <div class="career-card-header">
+            <div class="career-icon fi-cyan">🌍</div>
+            <div class="match-ring">
+              <div class="match-num" style="color:var(--cyan-500);">79%</div>
+              <div class="match-lbl">DNA Match</div>
+            </div>
+          </div>
+          <h3>Environmental Scientist</h3>
+          <p>Your Geography strength combined with Biology and a visual-spatial cognitive style points strongly toward environmental consulting, climate science, and conservation.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Geography B</span>
+            <span class="skill-tag">Biology A</span>
+            <span class="skill-tag">Spatial Reasoning</span>
+            <span class="skill-tag">Data Analysis</span>
+          </div>
+          <div style="border-top:1px solid var(--gray-100); padding-top:.8rem; margin-top:.5rem;">
+            <div class="pathway">🎓 JAMB → Environmental Science (B.Sc)</div>
+            <div class="pathway" style="margin-top:.4rem;">📍 OAU · UNIBEN · FUTA</div>
+          </div>
+          <div style="display:flex; align-items:center; gap:.6rem; margin-top:.8rem;">
+            <span class="badge badge-cyan">Good Match</span>
+            <span class="badge badge-cyan">4-Year Programme</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Radar Chart + Skills -->
+    <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+
+      <div class="card" style="padding: 1.4rem;">
+        <h3 style="font-size:.95rem; color:var(--blue-900); margin-bottom:.8rem;">🕸️ Cognitive Skills Radar</h3>
+        <div class="chart-container" style="height: 200px;">
+          <canvas id="radarChart" style="width:100%; height:200px;"></canvas>
+        </div>
+        <p style="font-size:.75rem; color:var(--gray-400); margin-top:.8rem; text-align:center;">Based on your Learning DNA profile analysis</p>
+      </div>
+
+      <div class="card" style="padding: 1.4rem;">
+        <h3 style="font-size:.95rem; color:var(--blue-900); margin-bottom:1rem;">⚡ Your Key Skills</h3>
+        <div style="display: flex; flex-direction: column; gap: .8rem;">
+          <div>
+            <div class="progress-label"><span style="font-size:.82rem; font-weight:600; color:var(--blue-900);">Problem Solving</span><span style="font-size:.82rem; font-weight:700; color:var(--blue-500);">90%</span></div>
+            <div class="progress-track"><div class="progress-fill green" data-width="90"></div></div>
+          </div>
+          <div>
+            <div class="progress-label"><span style="font-size:.82rem; font-weight:600; color:var(--blue-900);">Analytical Thinking</span><span style="font-size:.82rem; font-weight:700; color:var(--blue-500);">88%</span></div>
+            <div class="progress-track"><div class="progress-fill" data-width="88"></div></div>
+          </div>
+          <div>
+            <div class="progress-label"><span style="font-size:.82rem; font-weight:600; color:var(--blue-900);">Technical Aptitude</span><span style="font-size:.82rem; font-weight:700; color:var(--blue-500);">85%</span></div>
+            <div class="progress-track"><div class="progress-fill" data-width="85"></div></div>
+          </div>
+          <div>
+            <div class="progress-label"><span style="font-size:.82rem; font-weight:600; color:var(--blue-900);">Communication</span><span style="font-size:.82rem; font-weight:700; color:var(--blue-500);">78%</span></div>
+            <div class="progress-track"><div class="progress-fill purple" data-width="78"></div></div>
+          </div>
+          <div>
+            <div class="progress-label"><span style="font-size:.82rem; font-weight:600; color:var(--blue-900);">Creative Thinking</span><span style="font-size:.82rem; font-weight:700; color:var(--blue-500);">72%</span></div>
+            <div class="progress-track"><div class="progress-fill amber" data-width="72"></div></div>
+          </div>
+          <div>
+            <div class="progress-label"><span style="font-size:.82rem; font-weight:600; color:var(--blue-900);">Research & Analysis</span><span style="font-size:.82rem; font-weight:700; color:var(--blue-500);">80%</span></div>
+            <div class="progress-track"><div class="progress-fill" data-width="80"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div><!-- end career-main-grid -->
+
+  <!-- Academic Pathways Tabs -->
+  <div class="pathway-section">
+    <h3 style="font-size:1.1rem; color:var(--blue-900); margin-bottom:1.2rem;">🛤️ Academic & Career Pathways</h3>
+
+    <div class="pathway-tabs">
+      <button class="tab-btn active" data-tab="university-panel">🎓 University</button>
+      <button class="tab-btn" data-tab="polytechnic-panel">🏛️ Polytechnic</button>
+      <button class="tab-btn" data-tab="technical-panel">🔧 Technical / NABTEB</button>
+      <button class="tab-btn" data-tab="vocational-panel">⚙️ Vocational</button>
+    </div>
+
+    <!-- University Panel -->
+    <div id="university-panel" class="pathway-panel pathway-grid">
+      <div class="pathway-card">
+        <div class="p-icon">🏥</div>
+        <h4>Medicine & Surgery</h4>
+        <p>The gold standard for Biology-strong students. Requires cut-off 260+ JAMB and strong WAEC science grades.</p>
+        <div style="margin-top:.6rem;">
+          <div class="progress-wrap" style="margin-bottom:.3rem;">
+            <div class="progress-label" style="font-size:.72rem;"><span>Your DNA Compatibility</span><span>92%</span></div>
+            <div class="progress-track" style="height:5px;"><div class="progress-fill green" data-width="92"></div></div>
+          </div>
+        </div>
+        <span class="pathway-duration">6 years · MBBS</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">🔬</div>
+        <h4>Biomedical Science</h4>
+        <p>Lab-based sciences with direct medical relevance. Shorter route to healthcare careers via research and diagnostics.</p>
+        <div style="margin-top:.6rem;">
+          <div class="progress-wrap" style="margin-bottom:.3rem;">
+            <div class="progress-label" style="font-size:.72rem;"><span>Your DNA Compatibility</span><span>88%</span></div>
+            <div class="progress-track" style="height:5px;"><div class="progress-fill" data-width="88"></div></div>
+          </div>
+        </div>
+        <span class="pathway-duration">4 years · B.Sc</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">💊</div>
+        <h4>Pharmacy</h4>
+        <p>Chemistry-intensive degree with excellent graduate earnings. Strong in Nigeria's growing pharmaceutical sector.</p>
+        <div style="margin-top:.6rem;">
+          <div class="progress-wrap" style="margin-bottom:.3rem;">
+            <div class="progress-label" style="font-size:.72rem;"><span>Your DNA Compatibility</span><span>85%</span></div>
+            <div class="progress-track" style="height:5px;"><div class="progress-fill purple" data-width="85"></div></div>
+          </div>
+        </div>
+        <span class="pathway-duration">5 years · B.Pharm</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">🧬</div>
+        <h4>Biochemistry</h4>
+        <p>Bridge between Biology and Chemistry — ideal if your visual DNA processes molecular structures naturally.</p>
+        <div style="margin-top:.6rem;">
+          <div class="progress-wrap" style="margin-bottom:.3rem;">
+            <div class="progress-label" style="font-size:.72rem;"><span>Your DNA Compatibility</span><span>83%</span></div>
+            <div class="progress-track" style="height:5px;"><div class="progress-fill" data-width="83"></div></div>
+          </div>
+        </div>
+        <span class="pathway-duration">4 years · B.Sc</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">🌿</div>
+        <h4>Environmental Science</h4>
+        <p>Growing field with government and NGO opportunities. Geography strength gives you a head start.</p>
+        <div style="margin-top:.6rem;">
+          <div class="progress-wrap" style="margin-bottom:.3rem;">
+            <div class="progress-label" style="font-size:.72rem;"><span>Your DNA Compatibility</span><span>79%</span></div>
+            <div class="progress-track" style="height:5px;"><div class="progress-fill amber" data-width="79"></div></div>
+          </div>
+        </div>
+        <span class="pathway-duration">4 years · B.Sc</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">🏫</div>
+        <h4>Education (Biology)</h4>
+        <p>If teaching is your calling — Nigeria's education sector has massive unmet demand for qualified science teachers.</p>
+        <div style="margin-top:.6rem;">
+          <div class="progress-wrap" style="margin-bottom:.3rem;">
+            <div class="progress-label" style="font-size:.72rem;"><span>Your DNA Compatibility</span><span>74%</span></div>
+            <div class="progress-track" style="height:5px;"><div class="progress-fill amber" data-width="74"></div></div>
+          </div>
+        </div>
+        <span class="pathway-duration">4 years · B.Ed</span>
+      </div>
+    </div>
+
+    <!-- Polytechnic Panel -->
+    <div id="polytechnic-panel" class="pathway-panel pathway-grid" style="display:none;">
+      <div class="pathway-card">
+        <div class="p-icon">🏥</div>
+        <h4>Medical Laboratory Science (HND)</h4>
+        <p>Polytechnic route to clinical diagnostics. Strong employment in hospitals, labs, and public health agencies.</p>
+        <span class="pathway-duration">3 years HND · FCMLS Certification</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">💉</div>
+        <h4>Health Information Management</h4>
+        <p>Combines your organisational skills with health systems. Growing field with digital health records expansion.</p>
+        <span class="pathway-duration">2 years ND · 2 years HND</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">🌱</div>
+        <h4>Agricultural Technology</h4>
+        <p>Food security is one of Nigeria's biggest growth sectors. Your Biology knowledge applies directly here.</p>
+        <span class="pathway-duration">2 years ND · 2 years HND</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">🧪</div>
+        <h4>Science Laboratory Technology</h4>
+        <p>Prepares you for industrial, pharmaceutical, and research labs across Nigeria and internationally.</p>
+        <span class="pathway-duration">2 years ND · 2 years HND</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">📊</div>
+        <h4>Statistics</h4>
+        <p>Strong analytical DNA match. Government agencies, banks, and NGOs constantly need data professionals.</p>
+        <span class="pathway-duration">2 years ND · 2 years HND</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">🏛️</div>
+        <h4>Public Administration</h4>
+        <p>Your communication strength and analytical profile translate well into civil service and government careers.</p>
+        <span class="pathway-duration">2 years ND · 2 years HND</span>
+      </div>
+    </div>
+
+    <!-- Technical Panel -->
+    <div id="technical-panel" class="pathway-panel pathway-grid" style="display:none;">
+      <div class="pathway-card">
+        <div class="p-icon">⚡</div>
+        <h4>Electrical Installation Technology</h4>
+        <p>High-demand skill across construction, industrial, and renewable energy sectors. Licenses available via NABTEB and SON certification.</p>
+        <span class="pathway-duration">2–3 years NABTEB · Trade Test Level 1-3</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">🔩</div>
+        <h4>Mechanical Engineering Technology</h4>
+        <p>Covers automotive, manufacturing, and industrial maintenance. Strong graduate employment in oil & gas sector.</p>
+        <span class="pathway-duration">2–3 years Technical Certificate</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">🏗️</div>
+        <h4>Building Technology</h4>
+        <p>Nigeria's construction boom creates massive demand. Visual spatial skills in your DNA are a natural advantage here.</p>
+        <span class="pathway-duration">2 years NABTEB Certificate</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">💻</div>
+        <h4>Computer Craft Practice</h4>
+        <p>Entry point to Nigeria's tech ecosystem. Hardware, networking, and basic programming skills in one programme.</p>
+        <span class="pathway-duration">1.5–2 years NABTEB Certificate</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">🍳</div>
+        <h4>Catering & Hotel Management</h4>
+        <p>Hospitality is growing. Nigeria's tourism sector and hotel industry need trained professionals at every level.</p>
+        <span class="pathway-duration">2 years NABTEB Certificate</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">✂️</div>
+        <h4>Fashion Design & Clothing Technology</h4>
+        <p>Nigeria's fashion industry is globally recognised. Technical school training opens doors to entrepreneurship and export.</p>
+        <span class="pathway-duration">2 years · NABTEB Certified</span>
+      </div>
+    </div>
+
+    <!-- Vocational Panel -->
+    <div id="vocational-panel" class="pathway-panel pathway-grid" style="display:none;">
+      <div class="pathway-card">
+        <div class="p-icon">☀️</div>
+        <h4>Solar Energy Installation</h4>
+        <p>Nigeria's #1 fastest-growing trade. With over 80M households off-grid, solar technicians earn ₦200K–₦500K/month.</p>
+        <span class="pathway-duration">6 months · NECA Certified</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">📱</div>
+        <h4>Mobile Device & Electronics Repair</h4>
+        <p>120M+ smartphones in Nigeria. Certified technicians are in constant demand. Low startup cost, high earning potential.</p>
+        <span class="pathway-duration">3–6 months · Self-employed path</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">🚗</div>
+        <h4>Auto Mechanics & Diagnostics</h4>
+        <p>Modern vehicles need digital diagnostic skills, not just mechanical. Huge gap in the market for trained technicians.</p>
+        <span class="pathway-duration">1 year · FAN / NADDC Certified</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">🎨</div>
+        <h4>Graphic Design & Digital Media</h4>
+        <p>Creative economy is booming. Freelance digital designers in Nigeria earn $500–$3000/month serving global clients.</p>
+        <span class="pathway-duration">3–6 months intensive · Portfolio-based</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">🌾</div>
+        <h4>Commercial Farming & Agribusiness</h4>
+        <p>Government-backed and investor-funded. Aquaculture, poultry, and crop farming remain massively underserved.</p>
+        <span class="pathway-duration">6 months · NASC / State ADP Support</span>
+      </div>
+      <div class="pathway-card">
+        <div class="p-icon">🧱</div>
+        <h4>Tiling & Interior Finishing</h4>
+        <p>Construction finishing trades are in massive shortfall. Skilled tilers earn ₦80K–₦300K/month across Nigeria.</p>
+        <span class="pathway-duration">3 months · Trade Certification</span>
+      </div>
+    </div>
+
+  </div><!-- end pathway-section -->
+
+  <!-- Career Insight Banner -->
+  <div style="background: var(--grad-hero); border-radius: var(--radius-xl); padding: 2rem; color: var(--white); margin-top: 1.5rem; display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 250px;">
+      <div style="font-size:.75rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--cyan-300); margin-bottom:.6rem;">AI Career Insight</div>
+      <h3 style="color:var(--white); margin-bottom:.6rem; font-size:1.2rem;">Your DNA says Medicine. Your grades say keep going.</h3>
+      <p style="color:rgba(255,255,255,.7); font-size:.9rem; line-height:1.7;">With your Biology at 92% and Chemistry at 87%, you're already in the top 15% of WAEC science candidates nationally. Fixing your Mathematics score to 65%+ is the only remaining gate to medical school. Your Learning DNA path gets you there in 14 weeks.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: .8rem; min-width: 200px;">
+      <a href="dashboard.html" class="btn btn-primary" style="text-align:center;">📊 View Action Plan</a>
+      <a href="learning-dna.html" class="btn btn-outline" style="text-align:center;">🧬 Full DNA Profile</a>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 1rem; justify-content: center; margin: 2rem 0; flex-wrap: wrap;">
+    <a href="dashboard.html" class="btn btn-secondary">← Back to Dashboard</a>
+    <a href="learning-dna.html" class="btn btn-primary">🧬 Update My DNA Profile</a>
+  </div>
+
+</div><!-- end career content -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand">StudyMate<span>AI</span></div>
+  <p style="font-size:.88rem; margin-top:.3rem;">Nigeria's AI-Powered Personalized Learning Platform</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="learning-dna.html">Learning DNA</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="career-guidance.html">Career Guidance</a>
+  </div>
+  <div class="footer-copy">© 2025 StudyMate AI · All Rights Reserved</div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning DNA Profile — StudyMate AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">
+    <div class="brand-icon">🧬</div>
+    StudyMate <span>AI</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="learning-dna.html" class="active">Learning DNA</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="career-guidance.html">Career Guidance</a></li>
+    <li><a href="learning-dna.html" class="nav-cta">Get Started Free</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="learning-dna.html">Learning DNA</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="career-guidance.html">Career Guidance</a>
+  <a href="learning-dna.html" class="mobile-cta">Get Started Free</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero dna-page">
+  <div class="section-tag" style="justify-content:center; color:var(--cyan-400);">
+    AI-Generated Profile
+  </div>
+  <h1>Your Learning DNA</h1>
+  <p>A complete cognitive fingerprint of how you learn, where you're strong, and where you can grow — built by AI, unique to you.</p>
+</div>
+
+<!-- DNA CONTENT -->
+<div class="dna-content" style="max-width: 1100px; margin: 0 auto;">
+
+  <!-- Profile Header -->
+  <div class="profile-header-card">
+    <div class="profile-avatar">AO</div>
+    <div class="profile-meta">
+      <h2>Adaeze Okonkwo</h2>
+      <p>SS3 · Federal Government College, Enugu · WAEC 2025 Candidate</p>
+      <div style="display: flex; gap: .6rem; margin-top: .8rem; flex-wrap: wrap;">
+        <span class="badge badge-cyan">🔬 Visual Learner</span>
+        <span class="badge badge-blue">📚 Sciences Track</span>
+        <span class="badge badge-green">✅ Profile Active</span>
+      </div>
+    </div>
+    <div class="profile-dna-badge">
+      <div class="score">84</div>
+      <div class="score-label">DNA Score</div>
+      <div style="font-size:.72rem; color:rgba(255,255,255,.45); margin-top:.4rem;">Top 12% Nationally</div>
+    </div>
+  </div>
+
+  <!-- DNA Grid -->
+  <div class="dna-grid">
+
+    <!-- Learning Style -->
+    <div class="metric-card">
+      <h3><span class="icon">🧠</span> Learning Style Profile</h3>
+      <div style="margin-bottom: 1rem;">
+        <div class="progress-wrap">
+          <div class="progress-label"><span>Visual</span><span>88%</span></div>
+          <div class="progress-track"><div class="progress-fill" data-width="88"></div></div>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-label"><span>Reading/Writing</span><span>72%</span></div>
+          <div class="progress-track"><div class="progress-fill" data-width="72"></div></div>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-label"><span>Kinesthetic</span><span>65%</span></div>
+          <div class="progress-track"><div class="progress-fill green" data-width="65"></div></div>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-label"><span>Auditory</span><span>41%</span></div>
+          <div class="progress-track"><div class="progress-fill amber" data-width="41"></div></div>
+        </div>
+      </div>
+      <p style="font-size:.82rem; color:var(--gray-600); background: var(--gray-50); padding: .8rem; border-radius: 8px; border-left: 3px solid var(--cyan-500);">
+        <strong style="color: var(--blue-900);">Insight:</strong> Adaeze is a dominant <strong>Visual Learner</strong>. Diagrams, colour-coded notes, mind maps, and video explanations will dramatically improve retention compared to passive reading.
+      </p>
+      <div class="style-tags">
+        <span class="badge badge-cyan">Diagrams</span>
+        <span class="badge badge-blue">Mind Maps</span>
+        <span class="badge badge-purple">Flashcards</span>
+        <span class="badge badge-green">Video Lessons</span>
+        <span class="badge badge-amber">Colour Coding</span>
+      </div>
+    </div>
+
+    <!-- Consistency Score -->
+    <div class="metric-card">
+      <h3><span class="icon">⚡</span> Consistency Score</h3>
+      <div style="display: flex; justify-content: center; margin-bottom: 1.2rem;">
+        <div class="circle-wrap">
+          <svg class="circle-svg" width="120" height="120" viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50" stroke-width="10"/>
+            <circle class="circle-prog" cx="60" cy="60" r="50" stroke-width="10"
+              stroke="url(#blueGrad)" data-pct="76"/>
+            <defs>
+              <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#2563eb"/>
+                <stop offset="100%" stop-color="#06b6d4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div style="text-align:center; margin-top:-80px; position:relative; z-index:1;">
+            <div style="font-size:1.8rem; font-weight:800; color: var(--blue-900);">76%</div>
+            <div style="font-size:.72rem; color: var(--gray-400);">Consistency</div>
+          </div>
+          <div style="margin-top:70px;"></div>
+          <div class="circle-label">Study Streak: <strong>14 days</strong></div>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; text-align: center; margin-top:.5rem;">
+        <div style="background: var(--gray-50); border-radius: 10px; padding: .9rem;">
+          <div style="font-size:1.3rem; font-weight:800; color:var(--blue-500);">4.2h</div>
+          <div style="font-size:.75rem; color:var(--gray-400);">Daily Average</div>
+        </div>
+        <div style="background: var(--gray-50); border-radius: 10px; padding: .9rem;">
+          <div style="font-size:1.3rem; font-weight:800; color:var(--green-500);">14</div>
+          <div style="font-size:.75rem; color:var(--gray-400);">Day Streak 🔥</div>
+        </div>
+        <div style="background: var(--gray-50); border-radius: 10px; padding: .9rem;">
+          <div style="font-size:1.3rem; font-weight:800; color:var(--amber-500);">7–9PM</div>
+          <div style="font-size:.75rem; color:var(--gray-400);">Peak Study Time</div>
+        </div>
+        <div style="background: var(--gray-50); border-radius: 10px; padding: .9rem;">
+          <div style="font-size:1.3rem; font-weight:800; color:var(--purple-500);">45min</div>
+          <div style="font-size:.75rem; color:var(--gray-400);">Optimal Session</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Knowledge Retention -->
+    <div class="metric-card">
+      <h3><span class="icon">🧪</span> Knowledge Retention Analysis</h3>
+      <div style="margin-bottom: 1rem;">
+        <div class="progress-wrap">
+          <div class="progress-label"><span>After 1 Day</span><span>91%</span></div>
+          <div class="progress-track"><div class="progress-fill green" data-width="91"></div></div>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-label"><span>After 1 Week</span><span>74%</span></div>
+          <div class="progress-track"><div class="progress-fill" data-width="74"></div></div>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-label"><span>After 1 Month</span><span>56%</span></div>
+          <div class="progress-track"><div class="progress-fill amber" data-width="56"></div></div>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-label"><span>After 3 Months</span><span>38%</span></div>
+          <div class="progress-track"><div class="progress-fill rose" data-width="38"></div></div>
+        </div>
+      </div>
+      <p style="font-size:.82rem; background:#fefce8; padding:.8rem; border-radius:8px; border-left:3px solid var(--amber-500); color:var(--gray-700);">
+        <strong style="color:#92400e;">Recommendation:</strong> Use spaced repetition every 5 days to keep retention above 70%. Review topics using visual summaries — your brain re-encodes them fastest in picture form.
+      </p>
+    </div>
+
+    <!-- Recommended Study Method -->
+    <div class="metric-card">
+      <h3><span class="icon">📖</span> Recommended Study Method</h3>
+      <div style="display:flex; flex-direction:column; gap:.8rem; margin-bottom:1rem;">
+        <div style="display:flex; align-items:center; gap:.8rem; background:#eff6ff; border-radius:10px; padding:.9rem;">
+          <span style="font-size:1.2rem;">🗺️</span>
+          <div>
+            <div style="font-size:.88rem; font-weight:700; color:var(--blue-900);">Mind Mapping First</div>
+            <div style="font-size:.78rem; color:var(--gray-600);">Start every topic with a visual map before reading details</div>
+          </div>
+          <span class="badge badge-blue" style="margin-left:auto; white-space:nowrap;">Primary</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:.8rem; background:#f0fdf4; border-radius:10px; padding:.9rem;">
+          <span style="font-size:1.2rem;">🔁</span>
+          <div>
+            <div style="font-size:.88rem; font-weight:700; color:var(--blue-900);">Spaced Repetition</div>
+            <div style="font-size:.78rem; color:var(--gray-600);">Review at Day 1, 5, 12, 25 for maximum long-term retention</div>
+          </div>
+          <span class="badge badge-green" style="margin-left:auto; white-space:nowrap;">Core</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:.8rem; background:#fdf4ff; border-radius:10px; padding:.9rem;">
+          <span style="font-size:1.2rem;">🎬</span>
+          <div>
+            <div style="font-size:.88rem; font-weight:700; color:var(--blue-900);">Video + Notes Hybrid</div>
+            <div style="font-size:.78rem; color:var(--gray-600);">Watch concepts first, pause and draw, then summarise in writing</div>
+          </div>
+          <span class="badge badge-purple" style="margin-left:auto; white-space:nowrap;">Boosted</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:.8rem; background:var(--gray-50); border-radius:10px; padding:.9rem;">
+          <span style="font-size:1.2rem;">🧩</span>
+          <div>
+            <div style="font-size:.88rem; font-weight:700; color:var(--blue-900);">Practice Questions Last</div>
+            <div style="font-size:.78rem; color:var(--gray-600);">Do past questions after visual understanding is solid, not before</div>
+          </div>
+          <span class="badge badge-amber" style="margin-left:auto; white-space:nowrap;">Support</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Academic Strengths -->
+    <div class="metric-card">
+      <h3><span class="icon">💪</span> Academic Strengths</h3>
+      <div class="strengths-grid">
+        <div class="strength-item">
+          <div class="subj">Biology</div>
+          <div class="pct" style="color: var(--green-500);">92%</div>
+          <div style="font-size:.7rem; color:var(--gray-400); margin-top:.2rem;">Excellent</div>
+        </div>
+        <div class="strength-item">
+          <div class="subj">Chemistry</div>
+          <div class="pct" style="color: var(--blue-500);">87%</div>
+          <div style="font-size:.7rem; color:var(--gray-400); margin-top:.2rem;">Strong</div>
+        </div>
+        <div class="strength-item">
+          <div class="subj">English</div>
+          <div class="pct" style="color: var(--blue-500);">84%</div>
+          <div style="font-size:.7rem; color:var(--gray-400); margin-top:.2rem;">Strong</div>
+        </div>
+        <div class="strength-item">
+          <div class="subj">CRS</div>
+          <div class="pct" style="color: var(--green-500);">90%</div>
+          <div style="font-size:.7rem; color:var(--gray-400); margin-top:.2rem;">Excellent</div>
+        </div>
+        <div class="strength-item">
+          <div class="subj">Geography</div>
+          <div class="pct" style="color: var(--cyan-500);">79%</div>
+          <div style="font-size:.7rem; color:var(--gray-400); margin-top:.2rem;">Good</div>
+        </div>
+        <div class="strength-item">
+          <div class="subj">Literature</div>
+          <div class="pct" style="color: var(--cyan-500);">76%</div>
+          <div style="font-size:.7rem; color:var(--gray-400); margin-top:.2rem;">Good</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weak Areas -->
+    <div class="metric-card">
+      <h3><span class="icon">⚠️</span> Areas to Strengthen</h3>
+      <div class="weak-areas">
+        <div class="weak-item">
+          <div>
+            <div class="subj">Mathematics</div>
+            <div class="tip">Weak in calculus and probability. Switch to visual worked examples.</div>
+          </div>
+          <span class="badge badge-rose">48%</span>
+        </div>
+        <div class="weak-item">
+          <div>
+            <div class="subj">Physics</div>
+            <div class="tip">Struggles with abstract wave theory. Use animations and simulations.</div>
+          </div>
+          <span class="badge badge-rose">54%</span>
+        </div>
+        <div class="weak-item">
+          <div>
+            <div class="subj">Further Maths</div>
+            <div class="tip">Rarely practises — needs daily 20-min drills to build familiarity.</div>
+          </div>
+          <span class="badge badge-amber">39%</span>
+        </div>
+      </div>
+      <div style="margin-top: 1rem; background: #fff5f5; border-radius: 10px; padding: 1rem; border: 1px solid #fecdd3;">
+        <p style="font-size:.82rem; color:#9f1239; font-weight:500;">🎯 Priority Action: 30 minutes of visual Mathematics daily for the next 21 days will move your score from 48% to an estimated 68%.</p>
+      </div>
+    </div>
+
+    <!-- Career Compatibility -->
+    <div class="metric-card dna-full">
+      <h3><span class="icon">🔭</span> Career Compatibility</h3>
+      <div class="career-compat">
+        <div class="career-compat-item">
+          <span class="career-compat-label">Medicine & Health</span>
+          <div class="progress-track" style="flex:1; height:10px;">
+            <div class="progress-fill green" data-width="92"></div>
+          </div>
+          <span style="font-size:.85rem; font-weight:700; color:var(--green-500); min-width:40px; text-align:right;">92%</span>
+          <span class="badge badge-green">Top Match</span>
+        </div>
+        <div class="career-compat-item">
+          <span class="career-compat-label">Biomedical Science</span>
+          <div class="progress-track" style="flex:1; height:10px;">
+            <div class="progress-fill" data-width="88"></div>
+          </div>
+          <span style="font-size:.85rem; font-weight:700; color:var(--blue-500); min-width:40px; text-align:right;">88%</span>
+          <span class="badge badge-blue">Strong</span>
+        </div>
+        <div class="career-compat-item">
+          <span class="career-compat-label">Pharmacy</span>
+          <div class="progress-track" style="flex:1; height:10px;">
+            <div class="progress-fill" data-width="85"></div>
+          </div>
+          <span style="font-size:.85rem; font-weight:700; color:var(--blue-500); min-width:40px; text-align:right;">85%</span>
+          <span class="badge badge-blue">Strong</span>
+        </div>
+        <div class="career-compat-item">
+          <span class="career-compat-label">Environmental Science</span>
+          <div class="progress-track" style="flex:1; height:10px;">
+            <div class="progress-fill purple" data-width="79"></div>
+          </div>
+          <span style="font-size:.85rem; font-weight:700; color:var(--purple-500); min-width:40px; text-align:right;">79%</span>
+          <span class="badge badge-purple">Good</span>
+        </div>
+        <div class="career-compat-item">
+          <span class="career-compat-label">Education (Sciences)</span>
+          <div class="progress-track" style="flex:1; height:10px;">
+            <div class="progress-fill amber" data-width="74"></div>
+          </div>
+          <span style="font-size:.85rem; font-weight:700; color:var(--amber-500); min-width:40px; text-align:right;">74%</span>
+          <span class="badge badge-amber">Possible</span>
+        </div>
+        <div class="career-compat-item">
+          <span class="career-compat-label">Engineering</span>
+          <div class="progress-track" style="flex:1; height:10px;">
+            <div class="progress-fill amber" data-width="61"></div>
+          </div>
+          <span style="font-size:.85rem; font-weight:700; color:var(--amber-500); min-width:40px; text-align:right;">61%</span>
+          <span class="badge badge-amber">Possible</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DNA Profile Card -->
+    <div class="metric-card dna-full" style="background: var(--grad-hero); color: var(--white); border: none;">
+      <h3 style="color: var(--white); margin-bottom: .5rem;"><span class="icon">🧬</span> Your DNA Fingerprint</h3>
+      <p style="color: rgba(255,255,255,.65); font-size:.85rem; margin-bottom: 1.5rem;">This unique pattern is the AI model of your mind. No two are the same.</p>
+      <div class="dna-helix" aria-hidden="true">🔵🟦🔵🟦🔵🟦🔵🟦🔵</div>
+      <div class="dna-insights">
+        <div class="dna-insight-row">
+          <span class="insight-icon">💡</span>
+          <span class="insight-text">You retain visual information <strong>3.4x faster</strong> than text-only material. Always start with diagrams.</span>
+        </div>
+        <div class="dna-insight-row">
+          <span class="insight-icon">🌙</span>
+          <span class="insight-text">Your peak cognitive window is <strong>7PM – 10PM</strong>. Schedule difficult subjects in this window, always.</span>
+        </div>
+        <div class="dna-insight-row">
+          <span class="insight-icon">🔁</span>
+          <span class="insight-text">Without review, you lose <strong>44% of content</strong> within 3 weeks. Your spaced review schedule is critical.</span>
+        </div>
+        <div class="dna-insight-row">
+          <span class="insight-icon">🏆</span>
+          <span class="insight-text">Your Biology + Chemistry combination places you in the <strong>top 8%</strong> of WAEC candidates nationally.</span>
+        </div>
+        <div class="dna-insight-row">
+          <span class="insight-icon">🎯</span>
+          <span class="insight-text">With your current trajectory, a <strong>WAEC aggregate of 8</strong> is achievable in 14 weeks with consistent effort.</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end dna-grid -->
+
+  <div style="display: flex; gap: 1rem; justify-content: center; margin: 2rem 0; flex-wrap: wrap;">
+    <a href="dashboard.html" class="btn btn-primary">📊 View My Dashboard</a>
+    <a href="career-guidance.html" class="btn btn-secondary">🔭 Explore Careers</a>
+  </div>
+
+</div><!-- end dna-content -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand">StudyMate<span>AI</span></div>
+  <p style="font-size:.88rem; margin-top:.3rem;">Nigeria's AI-Powered Personalized Learning Platform</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="learning-dna.html">Learning DNA</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="career-guidance.html">Career Guidance</a>
+  </div>
+  <div class="footer-copy">© 2025 StudyMate AI · All Rights Reserved</div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

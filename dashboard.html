@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — StudyMate AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">
+    <div class="brand-icon">🧬</div>
+    StudyMate <span>AI</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="learning-dna.html">Learning DNA</a></li>
+    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+    <li><a href="career-guidance.html">Career Guidance</a></li>
+    <li><a href="learning-dna.html" class="nav-cta">Get Started Free</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="learning-dna.html">Learning DNA</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="career-guidance.html">Career Guidance</a>
+  <a href="learning-dna.html" class="mobile-cta">Get Started Free</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero dashboard-page">
+  <div class="section-tag" style="justify-content:center; color:var(--cyan-400);">Live Performance</div>
+  <h1>Your Dashboard</h1>
+  <p>Your live academic command centre — performance, progress, goals, and AI-driven recommendations in one view.</p>
+</div>
+
+<!-- DASHBOARD CONTENT -->
+<div class="dashboard-content" style="max-width: 1100px; margin: 0 auto;">
+
+  <!-- Welcome row -->
+  <div class="dash-welcome">
+    <div>
+      <h2>Good evening, Adaeze 👋</h2>
+      <p>You're on a 14-day study streak. Keep going — consistency is your superpower.</p>
+    </div>
+    <div class="dash-date" id="currentDate">Today</div>
+  </div>
+
+  <!-- KPI Row -->
+  <div class="kpi-row">
+    <div class="kpi-card">
+      <div class="kpi-icon fi-blue">📈</div>
+      <div>
+        <div class="kpi-value" data-count="84" data-suffix="">84</div>
+        <div class="kpi-label">DNA Score</div>
+        <div class="kpi-trend up">↑ +6 this month</div>
+      </div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon fi-green">🔥</div>
+      <div>
+        <div class="kpi-value" data-count="14" data-suffix="">14</div>
+        <div class="kpi-label">Day Streak</div>
+        <div class="kpi-trend up">↑ Personal best!</div>
+      </div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon fi-cyan">⏱️</div>
+      <div>
+        <div class="kpi-value" data-count="4" data-suffix=".2h">4.2h</div>
+        <div class="kpi-label">Daily Average</div>
+        <div class="kpi-trend up">↑ +0.8h vs last week</div>
+      </div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon fi-amber">🎯</div>
+      <div>
+        <div class="kpi-value" data-count="73" data-suffix="%">73%</div>
+        <div class="kpi-label">Weekly Target</div>
+        <div class="kpi-trend down">↓ 27% remaining</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main grid: Chart + Activity -->
+  <div class="dash-main-grid">
+
+    <!-- Weekly Progress Chart -->
+    <div class="card" style="padding: 1.6rem;">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.2rem;">
+        <h3 style="font-size: 1rem; color: var(--blue-900);">📊 Weekly Study Progress</h3>
+        <span class="badge badge-blue">This Week vs Last</span>
+      </div>
+      <div class="chart-container" style="height: 180px;">
+        <canvas id="weeklyChart" style="width:100%; height:180px;"></canvas>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3,1fr); gap: .8rem; margin-top: 1.2rem;">
+        <div style="text-align:center; background:var(--gray-50); border-radius:10px; padding:.8rem;">
+          <div style="font-size:1.2rem; font-weight:800; color:var(--blue-500);">29.5h</div>
+          <div style="font-size:.72rem; color:var(--gray-400);">Total This Week</div>
+        </div>
+        <div style="text-align:center; background:var(--gray-50); border-radius:10px; padding:.8rem;">
+          <div style="font-size:1.2rem; font-weight:800; color:var(--green-500);">+18%</div>
+          <div style="font-size:.72rem; color:var(--gray-400);">vs Last Week</div>
+        </div>
+        <div style="text-align:center; background:var(--gray-50); border-radius:10px; padding:.8rem;">
+          <div style="font-size:1.2rem; font-weight:800; color:var(--cyan-500);">7/7</div>
+          <div style="font-size:.72rem; color:var(--gray-400);">Days Active</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activity Summary -->
+    <div class="card" style="padding: 1.6rem;">
+      <h3 style="font-size: 1rem; color: var(--blue-900); margin-bottom: 1rem;">🕐 Recent Activity</h3>
+      <div class="activity-list">
+        <div class="activity-item">
+          <div class="activity-dot" style="background: var(--green-500);"></div>
+          <div class="activity-text">
+            <div class="activity-title">Biology — Cell Division</div>
+            <div class="activity-sub">Completed 45min visual session</div>
+          </div>
+          <div class="activity-time">2h ago</div>
+        </div>
+        <div class="activity-item">
+          <div class="activity-dot" style="background: var(--blue-500);"></div>
+          <div class="activity-text">
+            <div class="activity-title">Chemistry — Organic Reactions</div>
+            <div class="activity-sub">Flashcard review · 28/30 correct</div>
+          </div>
+          <div class="activity-time">5h ago</div>
+        </div>
+        <div class="activity-item">
+          <div class="activity-dot" style="background: var(--cyan-500);"></div>
+          <div class="activity-text">
+            <div class="activity-title">Mathematics Practice</div>
+            <div class="activity-sub">Quadratic equations · 60% score</div>
+          </div>
+          <div class="activity-time">Yesterday</div>
+        </div>
+        <div class="activity-item">
+          <div class="activity-dot" style="background: var(--amber-500);"></div>
+          <div class="activity-text">
+            <div class="activity-title">English — Comprehension</div>
+            <div class="activity-sub">Mind map + summary exercise</div>
+          </div>
+          <div class="activity-time">Yesterday</div>
+        </div>
+        <div class="activity-item">
+          <div class="activity-dot" style="background: var(--purple-500);"></div>
+          <div class="activity-text">
+            <div class="activity-title">WAEC Mock Test — Sciences</div>
+            <div class="activity-sub">Score: 71% · 14 areas flagged</div>
+          </div>
+          <div class="activity-time">2 days ago</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end dash-main-grid -->
+
+  <!-- Subject Performance -->
+  <div class="card" style="margin-bottom: 1.5rem; padding: 1.6rem;">
+    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:1.2rem; flex-wrap:wrap; gap:.8rem;">
+      <h3 style="font-size: 1rem; color: var(--blue-900);">📚 Subject Performance</h3>
+      <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
+        <span class="badge badge-green">5 Improved</span>
+        <span class="badge badge-rose">3 Need Attention</span>
+      </div>
+    </div>
+    <div class="subject-grid">
+      <div class="subject-card" style="border-color:#bbf7d0;">
+        <div class="subj-name">🔬 Biology</div>
+        <div class="subj-score" style="color:var(--green-500);">92%</div>
+        <div class="progress-wrap"><div class="progress-track"><div class="progress-fill green" data-width="92"></div></div></div>
+        <div class="subj-status" style="color:var(--green-500);">↑ Excellent — Keep going</div>
+      </div>
+      <div class="subject-card" style="border-color:#bfdbfe;">
+        <div class="subj-name">⚗️ Chemistry</div>
+        <div class="subj-score" style="color:var(--blue-500);">87%</div>
+        <div class="progress-wrap"><div class="progress-track"><div class="progress-fill" data-width="87"></div></div></div>
+        <div class="subj-status" style="color:var(--blue-500);">↑ Strong — +5 this week</div>
+      </div>
+      <div class="subject-card" style="border-color:#bfdbfe;">
+        <div class="subj-name">📖 English Language</div>
+        <div class="subj-score" style="color:var(--blue-500);">84%</div>
+        <div class="progress-wrap"><div class="progress-track"><div class="progress-fill" data-width="84"></div></div></div>
+        <div class="subj-status" style="color:var(--blue-500);">↑ On track for A</div>
+      </div>
+      <div class="subject-card" style="border-color:#cffafe;">
+        <div class="subj-name">✝️ CRS</div>
+        <div class="subj-score" style="color:var(--cyan-500);">90%</div>
+        <div class="progress-wrap"><div class="progress-track"><div class="progress-fill" data-width="90" style="background:linear-gradient(90deg, #06b6d4, #22d3ee);"></div></div></div>
+        <div class="subj-status" style="color:var(--cyan-500);">↑ Top performance</div>
+      </div>
+      <div class="subject-card" style="border-color:#fecdd3;">
+        <div class="subj-name">📐 Mathematics</div>
+        <div class="subj-score" style="color:var(--rose-500);">48%</div>
+        <div class="progress-wrap"><div class="progress-track"><div class="progress-fill rose" data-width="48"></div></div></div>
+        <div class="subj-status" style="color:var(--rose-500);">↓ Needs urgent attention</div>
+      </div>
+      <div class="subject-card" style="border-color:#fecdd3;">
+        <div class="subj-name">⚡ Physics</div>
+        <div class="subj-score" style="color:var(--rose-500);">54%</div>
+        <div class="progress-wrap"><div class="progress-track"><div class="progress-fill rose" data-width="54"></div></div></div>
+        <div class="subj-status" style="color:var(--rose-500);">↓ Use visual simulations</div>
+      </div>
+      <div class="subject-card" style="border-color:#e9d5ff;">
+        <div class="subj-name">🌍 Geography</div>
+        <div class="subj-score" style="color:var(--purple-500);">79%</div>
+        <div class="progress-wrap"><div class="progress-track"><div class="progress-fill purple" data-width="79"></div></div></div>
+        <div class="subj-status" style="color:var(--purple-500);">↑ Good — room to grow</div>
+      </div>
+      <div class="subject-card" style="border-color:#fef3c7;">
+        <div class="subj-name">📜 Literature</div>
+        <div class="subj-score" style="color:var(--amber-500);">76%</div>
+        <div class="progress-wrap"><div class="progress-track"><div class="progress-fill amber" data-width="76"></div></div></div>
+        <div class="subj-status" style="color:var(--amber-500);">→ Steady — needs review</div>
+      </div>
+      <div class="subject-card" style="border-color:#fecdd3;">
+        <div class="subj-name">🔢 Further Maths</div>
+        <div class="subj-score" style="color:var(--rose-500);">39%</div>
+        <div class="progress-wrap"><div class="progress-track"><div class="progress-fill rose" data-width="39"></div></div></div>
+        <div class="subj-status" style="color:var(--rose-500);">↓ Critical — daily drills needed</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Learning Goals + Study Recs -->
+  <div class="dash-side-grid">
+
+    <!-- Learning Goals -->
+    <div class="card" style="padding: 1.6rem;">
+      <h3 style="font-size:1rem; color:var(--blue-900); margin-bottom:1rem;">🏆 Learning Goals</h3>
+      <div class="goal-list">
+        <div class="goal-item">
+          <div class="goal-header">
+            <span class="goal-name">Raise Maths to 70%</span>
+            <span class="goal-pct">48%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill rose" data-width="48"></div></div>
+          <div style="font-size:.75rem; color:var(--gray-400);">Target: 14 weeks · ETA: Week 14</div>
+        </div>
+        <div class="goal-item">
+          <div class="goal-header">
+            <span class="goal-name">Complete WAEC Syllabus</span>
+            <span class="goal-pct">67%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill amber" data-width="67"></div></div>
+          <div style="font-size:.75rem; color:var(--gray-400);">126/188 topics covered</div>
+        </div>
+        <div class="goal-item">
+          <div class="goal-header">
+            <span class="goal-name">30-Day Consistency Streak</span>
+            <span class="goal-pct">47%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" data-width="47"></div></div>
+          <div style="font-size:.75rem; color:var(--gray-400);">14 of 30 days complete</div>
+        </div>
+        <div class="goal-item">
+          <div class="goal-header">
+            <span class="goal-name">Physics: Visual Mastery</span>
+            <span class="goal-pct">54%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill rose" data-width="54"></div></div>
+          <div style="font-size:.75rem; color:var(--gray-400);">Mechanics: done · Waves: in progress</div>
+        </div>
+        <div class="goal-item">
+          <div class="goal-header">
+            <span class="goal-name">DNA Score Target: 90</span>
+            <span class="goal-pct">84%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill green" data-width="84"></div></div>
+          <div style="font-size:.75rem; color:var(--gray-400);">6 points to target — on track!</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Study Recommendations -->
+    <div class="card" style="padding: 1.6rem;">
+      <h3 style="font-size:1rem; color:var(--blue-900); margin-bottom:1rem;">💡 AI Study Recommendations</h3>
+      <div class="rec-list">
+        <div class="rec-item">
+          <span class="rec-icon">🗺️</span>
+          <div>
+            <div class="rec-title">Start Math with Khan Academy visuals</div>
+            <div class="rec-desc">Your DNA flags you need animated examples before practice questions. Start here.</div>
+          </div>
+        </div>
+        <div class="rec-item" style="border-left-color: var(--green-500);">
+          <span class="rec-icon">🔁</span>
+          <div>
+            <div class="rec-title">Review Biology Chapter 7 today</div>
+            <div class="rec-desc">Spaced repetition alarm — this topic was studied 5 days ago. Review or lose 30% retention.</div>
+          </div>
+        </div>
+        <div class="rec-item" style="border-left-color: var(--amber-500);">
+          <span class="rec-icon">⏰</span>
+          <div>
+            <div class="rec-title">Move Physics to 7–8PM window</div>
+            <div class="rec-desc">Your cognitive data shows you score 23% higher on analytical tasks in your evening window.</div>
+          </div>
+        </div>
+        <div class="rec-item" style="border-left-color: var(--purple-500);">
+          <span class="rec-icon">🧩</span>
+          <div>
+            <div class="rec-title">Take a WAEC mock test this weekend</div>
+            <div class="rec-desc">It's been 8 days. Exam practice gaps hurt retention. Aim for 2.5h this Saturday.</div>
+          </div>
+        </div>
+        <div class="rec-item" style="border-left-color: var(--cyan-500);">
+          <span class="rec-icon">🎬</span>
+          <div>
+            <div class="rec-title">Watch organic chemistry reactions video</div>
+            <div class="rec-desc">Your visual learning profile responds 3x better to video than textbook for complex reactions.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end dash-side-grid -->
+
+  <!-- Performance Analytics -->
+  <div class="card" style="margin-top: 1.5rem; padding: 1.6rem;">
+    <h3 style="font-size:1rem; color:var(--blue-900); margin-bottom:1.2rem;">📊 Performance Analytics — 30-Day Snapshot</h3>
+    <div style="display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+      <div style="background:var(--grad-card); border: 1px solid var(--gray-200); border-radius:12px; padding:1.2rem; text-align:center;">
+        <div class="stat-num">+24%</div>
+        <div style="font-size:.78rem; color:var(--gray-400); margin-top:.3rem;">Overall Improvement</div>
+      </div>
+      <div style="background:var(--grad-card); border: 1px solid var(--gray-200); border-radius:12px; padding:1.2rem; text-align:center;">
+        <div class="stat-num">188</div>
+        <div style="font-size:.78rem; color:var(--gray-400); margin-top:.3rem;">Topics Attempted</div>
+      </div>
+      <div style="background:var(--grad-card); border: 1px solid var(--gray-200); border-radius:12px; padding:1.2rem; text-align:center;">
+        <div class="stat-num">847</div>
+        <div style="font-size:.78rem; color:var(--gray-400); margin-top:.3rem;">Practice Questions</div>
+      </div>
+      <div style="background:var(--grad-card); border: 1px solid var(--gray-200); border-radius:12px; padding:1.2rem; text-align:center;">
+        <div class="stat-num">78%</div>
+        <div style="font-size:.78rem; color:var(--gray-400); margin-top:.3rem;">Avg. Accuracy</div>
+      </div>
+    </div>
+
+    <!-- Progress bars comparison -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+      <div>
+        <h4 style="font-size:.88rem; color:var(--gray-600); margin-bottom:.8rem;">Subject Progress — Start vs Now</h4>
+        <div class="progress-wrap">
+          <div class="progress-label"><span>Biology</span><span>72% → 92%</span></div>
+          <div class="progress-track"><div class="progress-fill green" data-width="92"></div></div>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-label"><span>Chemistry</span><span>68% → 87%</span></div>
+          <div class="progress-track"><div class="progress-fill" data-width="87"></div></div>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-label"><span>English</span><span>75% → 84%</span></div>
+          <div class="progress-track"><div class="progress-fill" data-width="84"></div></div>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-label"><span>Mathematics</span><span>32% → 48%</span></div>
+          <div class="progress-track"><div class="progress-fill amber" data-width="48"></div></div>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:.88rem; color:var(--gray-600); margin-bottom:.8rem;">DNA Profile Growth</h4>
+        <div class="progress-wrap">
+          <div class="progress-label"><span>Knowledge Retention</span><span>88%</span></div>
+          <div class="progress-track"><div class="progress-fill" data-width="88"></div></div>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-label"><span>Study Consistency</span><span>76%</span></div>
+          <div class="progress-track"><div class="progress-fill purple" data-width="76"></div></div>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-label"><span>Career Alignment</span><span>92%</span></div>
+          <div class="progress-track"><div class="progress-fill green" data-width="92"></div></div>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-label"><span>Exam Readiness</span><span>64%</span></div>
+          <div class="progress-track"><div class="progress-fill amber" data-width="64"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 1rem; justify-content: center; margin: 2rem 0; flex-wrap: wrap;">
+    <a href="learning-dna.html" class="btn btn-primary">🧬 View Full DNA Profile</a>
+    <a href="career-guidance.html" class="btn btn-secondary">🔭 Career Guidance</a>
+  </div>
+
+</div><!-- end dashboard content -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand">StudyMate<span>AI</span></div>
+  <p style="font-size:.88rem; margin-top:.3rem;">Nigeria's AI-Powered Personalized Learning Platform</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="learning-dna.html">Learning DNA</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="career-guidance.html">Career Guidance</a>
+  </div>
+  <div class="footer-copy">© 2025 StudyMate AI · All Rights Reserved</div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
